@@ -4,13 +4,27 @@
     <head>
         <title>Minha página</title>
         <meta charset="utf-8">
-    </head>
-    <body>
         <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="loadIt()">
         <!--<script>
              alert("meu primeiro js");
         </script>-->
         <h1>Minha página<h1>
+                <button type="button" onclick="clicou()">Clique aqui</button>
+                <!--<h3 id="agradecimento"></h3> -->
+                <p id="agradecimento" onclick="redirecionar_local()"></p>
+                <button type="button" onclick="redirecionar()">github</button>
+                <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse</p>
+                <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse</p>
+
+
+                <select onchange="Change(this)">
+                    <option value="1">Valor 1</option>
+                    <option value="2">Valor 2</option>
+                    <option value="3">Valor 3</option>
+                    <option value="4">Valor 4</option>
+                </select>
     </body>
 
 </html>

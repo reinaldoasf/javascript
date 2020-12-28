@@ -1,4 +1,46 @@
-function soma(n1,n2)
+function clicou(){
+
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+    console.log(document.getElementById("agradecimento"));
+    //alert ("Obrigado por clicar");
+
+}
+
+
+function redirecionar(){
+    window.open("https://github.com/reinaldoasf");
+
+}
+
+function redirecionar_local(){
+    window.location.href = "https://github.com/reinaldoasf";
+
+}
+
+function trocar(elemento){
+
+    elemento.innerHTML = "<b>Obrigado por passar o mouse</b>";
+    //alert("trocar texto");
+}
+
+
+function voltar(elemento)
+{
+    elemento.innerHTML = "Passe o mouse";
+    
+}
+
+function loadIt()
+{
+    console.log("pagina carregada");
+    alert("pagina carregada");
+}
+
+function Change(elemento){
+    console.log(elemento.value)
+}
+
+/*function soma(n1,n2)
 {
 
     return n1+n2;
@@ -25,7 +67,7 @@ function validaIdade(idade){
 var idade = prompt("Qual a sua idade?");
 console.log(validaIdade(idade));
 alert(soma(5,10));
-
+*/
 //alert(setReplace("Vai Japão", "Japão", "Brasil"));
 
 
